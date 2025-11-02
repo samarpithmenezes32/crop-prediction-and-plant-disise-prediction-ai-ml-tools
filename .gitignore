@@ -1,0 +1,61 @@
+# .gitignore for Climate-Smart Agriculture project
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data files (often large and sensitive)
+data/*.csv
+data/*.xlsx
+data/*.json
+data/plant_diseases/train/
+data/plant_diseases/valid/
+!data/schema_sample.csv
+
+# Model artifacts (can be large)
+models/*.pkl
+models/*.h5
+models/disease/*.h5
+models/*.joblib
+models/*.png
+models/*.jpg
+
+# MLflow tracking (can be very large)
+mlruns/
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and outputs
+*.log
+logs/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Test outputs
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Streamlit cache
+.streamlit/

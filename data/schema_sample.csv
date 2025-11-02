@@ -1,0 +1,44 @@
+# Sample Data Schema for merged_agri.csv
+# This file describes the expected format for the agriculture dataset
+
+# Columns and their descriptions:
+
+crop,soil_type,soil_pH,org_carbon,N,P,K,rainfall_monsoon_mm,rainy_days,avg_temp_season_c,dry_spell_days,irrigation_access,district,year,production_t,area_ha
+Rice,Lateritic,6.5,1.2,80,40,60,2200,70,28.5,10,Canal,Udupi,2020,4.5,1.0
+Maize,Alluvial,6.8,1.5,100,50,70,1800,55,29.0,15,Tube-well,Udupi,2020,5.2,1.2
+Groundnut,Red,6.2,1.0,60,35,50,2000,65,27.5,12,Rain-fed,Udupi,2020,2.8,0.8
+Ragi,Lateritic,6.4,1.1,70,38,55,2100,68,28.0,11,None,Udupi,2020,2.5,0.9
+Rice,Lateritic,6.6,1.3,85,42,62,2300,72,28.2,9,Canal,Udupi,2021,4.8,1.0
+Maize,Black,7.0,1.8,110,55,75,1900,58,28.8,13,Tube-well,Dakshina Kannada,2021,5.5,1.1
+Groundnut,Sandy Loam,6.3,1.2,65,37,52,2050,67,27.8,14,Rain-fed,Dakshina Kannada,2021,3.0,0.85
+Rice,Alluvial,6.7,1.4,90,45,65,2400,75,28.3,8,Canal,Udupi,2022,5.0,1.05
+Maize,Red,6.5,1.3,95,48,68,1850,56,29.2,16,Drip,Udupi,2022,5.3,1.15
+Wheat,Black,7.2,1.6,100,50,70,800,30,22.0,20,Canal,Udupi,2022,3.5,0.9
+
+# Column Descriptions:
+# ------------------
+# crop: Type of crop grown (Rice, Maize, Groundnut, Ragi, Wheat, Soybean, Cotton, etc.)
+# soil_type: Soil classification (Lateritic, Alluvial, Black, Red, Sandy Loam)
+# soil_pH: Soil pH level (range: 4.0 to 9.0)
+# org_carbon: Organic carbon content in percentage (range: 0.1 to 3.0)
+# N: Nitrogen content in kg/ha (range: 0 to 300)
+# P: Phosphorus content in kg/ha (range: 0 to 200)
+# K: Potassium content in kg/ha (range: 0 to 300)
+# rainfall_monsoon_mm: Cumulative monsoon season rainfall in mm (range: 200 to 4000)
+# rainy_days: Number of rainy days in the season (range: 0 to 150)
+# avg_temp_season_c: Average temperature during growing season in Celsius (range: 15 to 40)
+# dry_spell_days: Maximum consecutive dry days (range: 0 to 60)
+# irrigation_access: Type of irrigation (None, Rain-fed, Canal, Tube-well, Drip)
+# district: Geographic district name
+# year: Year of cultivation (for temporal splitting)
+# production_t: Total crop production in tonnes
+# area_ha: Cultivated area in hectares
+
+# Notes:
+# ------
+# 1. The target variable 'yield_t_ha' will be calculated as production_t / area_ha
+# 2. Ensure no missing values in critical columns (crop, year, production_t, area_ha)
+# 3. For temporal validation, train on years < 2023, test on years >= 2023
+# 4. Rainfall should be aggregated for the specific crop growing season (e.g., Kharif: Jun-Oct)
+# 5. Temperature should be the average for the growing period
+# 6. Minimum recommended dataset size: 500-1000 samples for good model performance

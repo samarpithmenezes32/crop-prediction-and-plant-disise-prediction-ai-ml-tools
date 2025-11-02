@@ -1,0 +1,43 @@
+{
+  "accuracy": 0.990909090909091,
+  "n_samples": 2200,
+  "n_features": 7,
+  "n_classes": 22,
+  "model_type": "RandomForest",
+  "n_estimators": 500,
+  "max_depth": 25,
+  "features": [
+    "N",
+    "P",
+    "K",
+    "temperature",
+    "humidity",
+    "ph",
+    "rainfall"
+  ],
+  "classes": [
+    "apple",
+    "banana",
+    "blackgram",
+    "chickpea",
+    "coconut",
+    "coffee",
+    "cotton",
+    "grapes",
+    "jute",
+    "kidneybeans",
+    "lentil",
+    "maize",
+    "mango",
+    "mothbeans",
+    "mungbean",
+    "muskmelon",
+    "orange",
+    "papaya",
+    "pigeonpeas",
+    "pomegranate",
+    "rice",
+    "watermelon"
+  ],
+  "training_date": "2025-10-29 10:27:16"
+}

@@ -1,0 +1,12 @@
+{
+  "0": "healthy",
+  "1": "bacterial_spot",
+  "2": "early_blight",
+  "3": "late_blight",
+  "4": "leaf_mold",
+  "5": "septoria",
+  "6": "spider_mites",
+  "7": "target_spot",
+  "8": "yellow_curl",
+  "9": "mosaic_virus"
+}

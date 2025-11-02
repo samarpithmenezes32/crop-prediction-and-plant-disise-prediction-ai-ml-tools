@@ -1,0 +1,47 @@
+{
+  "apple": {
+    "status": "success",
+    "accuracy": 0.75,
+    "num_classes": 4
+  },
+  "cherry": {
+    "status": "success",
+    "accuracy": 1.0,
+    "num_classes": 2
+  },
+  "corn": {
+    "status": "success",
+    "accuracy": 0.75,
+    "num_classes": 4
+  },
+  "grape": {
+    "status": "success",
+    "accuracy": 0.5,
+    "num_classes": 4
+  },
+  "peach": {
+    "status": "success",
+    "accuracy": 1.0,
+    "num_classes": 2
+  },
+  "pepper": {
+    "status": "success",
+    "accuracy": 1.0,
+    "num_classes": 2
+  },
+  "potato": {
+    "status": "success",
+    "accuracy": 1.0,
+    "num_classes": 3
+  },
+  "strawberry": {
+    "status": "success",
+    "accuracy": 1.0,
+    "num_classes": 2
+  },
+  "tomato": {
+    "status": "success",
+    "accuracy": 0.30000001192092896,
+    "num_classes": 10
+  }
+}
